@@ -69,3 +69,26 @@ Aȅer you are done with your work, you can merge it to the main branch.
 For creating a new branch, the following command is used :
 git branch <branch_name>
 
+
+
+10. Git Checkout
+The Git checkout is used to command Git on which branch changes have to be made.
+Checkout is simply used to change branches in repositories. It can also be used to
+restore files.
+
+The following image describes the scenario of creating different branches and
+switching to a brach when needed, i.e. we can switch from the main brach to a
+different branch and vice versa.
+
+Git Checkout Branch
+To checkout or create a branch, the following command can be used:
+git checkout -b <branch_name>
+This will simply switch to the new branch branch_name.
+Git Checkout Tag
+While working on a large codebase, it because easy to have some reference point.
+That is where the checkout tag is used.
+The following command is used to specify the tagname as well as the branch that
+will be checked out.
+git checkout tag</tag> <branch_name>
+
+
