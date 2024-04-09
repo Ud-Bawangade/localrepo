@@ -71,6 +71,7 @@ git branch <branch_name>
 
 
 
+<<<<<<< HEAD
 10. Git Checkout
 The Git checkout is used to command Git on which branch changes have to be made.
 Checkout is simply used to change branches in repositories. It can also be used to
@@ -92,3 +93,30 @@ will be checked out.
 git checkout tag</tag> <branch_name>
 
 
+=======
+7. Git Switch Branch
+Using the git checkout command, we can switch from one branch to another.
+Command :
+git checkout <branch_name>
+8. Create Remote Branches
+Git doesn’t allow creating a new and isolated branch on a remote repository. But, you
+to make a branch remote, we can push an existing local branch.
+The steps to create a remote branch is as follows:
+Create a local branch and switch to that branch:
+git checkout -b <branch_name>
+Push in the local branch:
+git push -u origin <branch_name>
+Note: origin is the default name of remote
+Now, if someone wants to fetch some information, one can simply run:
+git fetch
+git checkout <branch_name>
+9. Delete Branches
+Once the work is done on a branch and merged with the Main branch, one can delete
+the branch.
+The following command is used to delete branches:
+git delete -d <branch_name>
+Note: This command deletes a copy of the branch, but the original branch can
+still exist in remote repositories.
+To delete remote branches, use the following command:
+git push origin --delete <branch_name>
+>>>>>>> main
