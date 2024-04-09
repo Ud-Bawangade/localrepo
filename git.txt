@@ -1,0 +1,71 @@
+1. Uses of Git
+Git is used to tracking changes in the source code.
+Distributed version control tool used for source code management.
+Allows multiple developers to work together.
+Supports non-linear development because of its thousands of parallel branches.
+
+2. Features of Git
+Free and open-source
+Tracks history
+Supports non-linear development
+Creates backup
+Scalable
+Supports collaboration
+Branching is easier
+Distributed development.
+
+3. Git WorkFlow
+In Git, the workflow is mainly divided into three areas -
+
+Working directory - This is the area where you modify your existing files.
+Staging area (Index) - In this, the files in your working directory are staged and
+snapshots are added.
+Git directory or repository - It is basically where you perform all the changes
+that need to be made i.e. perform commits to branch, checkout branch, make
+changes etc.
+4. Install Git: Installation in Windows/Linux/Mac OS X
+Install Git on Windows -
+Download the latest version of Git from here.
+Aȅer starting the installer, follow the command on the screen and press Next to
+complete the installation.
+Open Command Prompt and run the following command to configure Git on
+your PC using your username and email.
+$ git config --global user.name "username"
+$ git config --global user.email "user_emails@interviewbit.com"
+This configures Git on your PC with your username and email.
+
+Install Git on Linux -
+You can install Git on Linux using the command apt-get :
+$ sudo apt-get update
+$ sudo apt-get install git
+
+5. Git Clone
+git clone is a command which is used to clone or copy a target repository.
+The following image shows an illustration of the git clone command. Using the
+command, a copy of the original repository is created.
+How to clone a repository?
+Open Github and navigate to the target repository which needs to be cloned.
+Under the repo name, click on the tab Clone or Download.
+An option named Clone with HTTPS appears.
+Copy the Clone URL.
+Open a command line and use the command: git clone <repo_URL>
+
+
+
+
+In this way, a clone of the target repository can be made.
+Clone a specific branch from the repository.
+A very useful feature of the git clone is that it allows cloning a specific branch of the
+target repository without having to clone the entire repository.
+To clone a specific branch, you need to use the command -b to specify the branch.
+The following command is used:
+git clone -b <Branch_name> <Repo_URL>
+
+
+6. Git Branch
+A branch in Git is used to keep your changes until they are ready.
+You can do your work on a branch while the main branch(main) remains stable.
+Aȅer you are done with your work, you can merge it to the main branch.
+For creating a new branch, the following command is used :
+git branch <branch_name>
+
